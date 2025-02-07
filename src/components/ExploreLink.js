@@ -4,7 +4,7 @@ import Typography from "@mui/joy/Typography";
 import CardContent from '@mui/joy/CardContent';
 import { Box , Divider} from "@mui/material";
 import { LinkedIn, GitHub, Link } from "@mui/icons-material";
-import { motion } from "framer-motion";
+
 
 const ExploreLink = ({ show }) => {
   return (

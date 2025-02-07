@@ -1,17 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   Avatar,
   Button,
   Box,
   AppBar,
   Toolbar,
-  Tab,
-  Tabs,
   Typography,
   Card,
 } from "@mui/material";
 import { styled } from "@mui/system";
-import ExploreLink from "./ExploreLink";
 import { LinkedIn, GitHub, Link, Facebook } from "@mui/icons-material";
 
 const Header = styled(Box)({
@@ -45,12 +42,12 @@ const SmallAvatar = styled(Avatar)({
 
 const Headers = ({ setActiveTab }) => {
 
-  const [selectedTab, setSelectedTab] = useState(0);
+  // const [selectedTab, setSelectedTab] = useState(0);
 
-  const handleChange = (event, newValue) => {
-    setSelectedTab(newValue);
-    setActiveTab(newValue);
-  };
+  // const handleChange = (event, newValue) => {
+    // setSelectedTab(newValue);
+    // setActiveTab(newValue);
+  // };
 
   const handleDownload = () => {
     const resumeUrl = "/Giri-RESUME.pdf"; 

@@ -3,12 +3,10 @@ import {
   Card,
   Typography,
   Box,
-  Divider,
   Grid,
   Accordion,
   AccordionSummary,
   AccordionDetails,
-  Paper,
   CardContent,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";

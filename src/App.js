@@ -1,10 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import Headers from './components/Header';
 import { Box, IconButton } from "@mui/material";
 import SkillsCard from './components/Skills';
 import Experience from './components/Experience';
-import ExploreLink from './components/ExploreLink';
 import Education from './components/Education';
 import { useEffect, useRef, useState } from 'react';
 import { motion } from "framer-motion";
@@ -41,7 +39,7 @@ function App() {
     }, 60000);
 
     return () => clearInterval(interval);
-  }, [currentSection]);
+  }, [currentSection, scroll]);
 
   return (
     <>

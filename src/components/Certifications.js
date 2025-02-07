@@ -1,26 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import {
-  Box,
   Divider,
-  Grid,
-  Accordion,
-  AccordionSummary,
-  AccordionDetails,
-  Paper, Avatar, Dialog, DialogTitle, DialogContent
 } from "@mui/material";
-
 import Card from '@mui/joy/Card';
-import IconButton from '@mui/joy/IconButton';
 import Link from '@mui/joy/Link';
 import CardOverflow from '@mui/joy/CardOverflow'
-import Favorite from '@mui/icons-material/Favorite';
-import AspectRatio from '@mui/joy/AspectRatio';
-import CardCover from '@mui/joy/CardCover';
 import Typography from "@mui/joy/Typography";
 import CardContent from '@mui/joy/CardContent';
-import LocationOnRoundedIcon from '@mui/icons-material/LocationOnRounded';
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { DialerSipRounded, SafetyDivider } from "@mui/icons-material";
+
 const Certification_list = [
     {
       langauge: "Python",
@@ -38,11 +25,11 @@ const Certification_list = [
   ];
 const Certifications =() => {
 
-    const [open, setOpen] = useState(false)
-    const [selectedJob, setSelectedJob] = useState(null)
+    // const [open, setOpen] = useState(false)
+    // const [selectedJob, setSelectedJob] = useState(null)
     const handleClickOpen = (job) => {
-        setSelectedJob(job);
-        setOpen(true);
+        // setSelectedJob(job);
+        // setOpen(true);
       };
     return(
     <>

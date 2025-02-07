@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Card, CardContent, Button, Tabs, Tab } from "@mui/material";
+import { Card, CardContent, Tabs, Tab } from "@mui/material";
 import { motion } from "framer-motion";
 
 const TabsComponent =() =>{
