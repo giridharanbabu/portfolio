@@ -4,7 +4,7 @@ import { Box, IconButton } from "@mui/material";
 import SkillsCard from './components/Skills';
 import Experience from './components/Experience';
 import Education from './components/Education';
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { motion } from "framer-motion";
 import { ArrowBackIos, ArrowForwardIos } from '@mui/icons-material';
 import Certifications from './components/Certifications';
@@ -18,7 +18,7 @@ function App() {
   const [currentSection, setCurrentSection] = useState(0);
 
   // Function to scroll manually by section
-  const scroll = (direction) => {
+  const scroll = useCallback ((direction) => {
     if (sections.current.length > 0) {
       let newIndex = direction === "left" ? currentSection - 1 : currentSection + 1;
 
@@ -30,7 +30,7 @@ function App() {
         }
       }
     }
-  };
+  },[currentSection]);
 
   // Auto-scroll every 1 min (60,000ms)
   useEffect(() => {
@@ -39,7 +39,7 @@ function App() {
     }, 60000);
 
     return () => clearInterval(interval);
-  }, [currentSection, scroll]);
+  }, [scroll]);
 
   return (
     <>
