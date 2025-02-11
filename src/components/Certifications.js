@@ -1,36 +1,66 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Divider,
+  hexToRgb,
 } from "@mui/material";
 import Card from '@mui/joy/Card';
 import Link from '@mui/joy/Link';
 import CardOverflow from '@mui/joy/CardOverflow'
 import Typography from "@mui/joy/Typography";
 import CardContent from '@mui/joy/CardContent';
+import Modal from "@mui/joy/Modal";
+import Button from "@mui/joy/Button";
+
+
+const modalStyle = {
+  position: "absolute",
+  height: "600px",
+  width: "800px",
+  top: "50%",
+  left: "50%",
+  right: "30%",
+  transform: "translate(-50%, -50%)",
+  backgroundColor: "white",
+  padding: "20px",
+  borderRadius: "8px",
+  boxShadow: 24,
+  outline: "none",
+  overflow: "auto", // Ensure the content can scroll
+  maxHeight: "90vh", // Limit the height of the modal to 90% of the viewport
+  maxWidth: "90vw", //
+};
 
 const Certification_list = [
     {
       langauge: "Python",
       Provider: "HackerRank",
       CertificateId: "859E14BF2F69",
-      img_src: "https://images.unsplash.com/photo-1532614338840-ab30cf10ed36?auto=format&fit=crop&w=318"
+      img_src: "./python_basic certificate.pdf"
     },
     {
       langauge: "SQL Advanced",
       Provider: "HackerRank",
       CertificateId: "C05B2914DB95",
-      img_src: "https://images.unsplash.com/photo-1532614338840-ab30cf10ed36?auto=format&fit=crop&w=318",
+      img_src: "./sql_advanced certificate.pdf",
     
     }
   ];
 const Certifications =() => {
 
-    // const [open, setOpen] = useState(false)
+    const [open, setOpen] = useState(false)
+    const [file, setFile] = useState(null)
     // const [selectedJob, setSelectedJob] = useState(null)
-    const handleClickOpen = (job) => {
-        // setSelectedJob(job);
-        // setOpen(true);
+
+    const handleClickOpen = (fileType) => {
+        setFile(fileType);
+        setOpen(true);
       };
+
+    const handleClickClose = () => {
+      setOpen(false)
+      setFile(null)
+    }
+    
     return(
     <>
      <Card
@@ -64,7 +94,7 @@ const Certifications =() => {
               display:'none'
             }}}>
         <Typography level="title-md">
-          <Link href="#multiple-actions" overlay underline="none" onClick={() => handleClickOpen(certificate)}>
+          <Link href="#multiple-actions" overlay underline="none" onClick={() => handleClickOpen(certificate.img_src)}>
             {certificate.langauge}
           </Link>
         </Typography>
@@ -82,7 +112,29 @@ const Certifications =() => {
       </CardOverflow>
     </Card>
             ))}
-        </Card>
+     </Card>
+     <Modal  open={open} onClose={handleClickClose}>
+        <div style={modalStyle}>
+          <Typography variant="h6" sx={{ marginBottom: 2 }}>
+            File Preview
+          </Typography>
+         { file && file.endsWith(".pdf") ? 
+         (<iframe 
+         src={file}
+         style={{height: "450px", width: "100%", overflow:"auto",}}
+         title= 'File Preview'
+          />
+         )
+
+         : (
+            <Typography>No file selected.</Typography>
+          )}
+          
+          {/* <Button variant="outlined" onClick={handleClickClose} sx={{ marginTop: 2 }}>
+            Close Preview
+          </Button> */}
+        </div>
+      </Modal>
     </>
     )
 }
