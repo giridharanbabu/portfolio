@@ -94,7 +94,7 @@ const Experience_list = [
       <>
         <Card
           sx={{
-            width: "65%",
+            width: "70%",
             height: "250px",
             bgcolor: "transparent",
             p: 2,
