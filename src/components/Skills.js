@@ -46,7 +46,7 @@ export default function SkillsCard() {
             height: "250px",
             position: "relative",
             boxShadow: "5px 5px 5px 5px #888888",
-            overflowY: "autp",
+            overflowY: "auto",
             border: "3px solid black",
             margin: "10px 20px 0px 20px",
             borderRadius: "10px 10px 10px 10px",

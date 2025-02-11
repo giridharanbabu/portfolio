@@ -82,7 +82,7 @@ function App() {
           {/* Section 1 */}
           <Box
             ref={(el) => (sections.current[0] = el)}
-            sx={{ position: "relative", display: "flex", gap: "5px", marginLeft: '10px', padding: "10px", minWidth: "100%", justifyContent: "center" }}
+            sx={{ position: "relative", display: "flex", gap: "5px", padding: "10px", minWidth: "100%", justifyContent: "center" }}
           >
             <SkillsCard />
             <Experience />

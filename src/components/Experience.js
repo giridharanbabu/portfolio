@@ -94,14 +94,27 @@ const Experience_list = [
       <>
         <Card
           sx={{
-            width: "70%",
+            width: "75%",
             height: "250px",
             bgcolor: "transparent",
             p: 2,
-            boxShadow: "5px 5px 10px #888888",
-            border: "2px solid black",
-            margin: "20px auto",
-            borderRadius: "10px",
+            position: "relative",
+            boxShadow: "5px 5px 5px 5px #888888",
+            overflowY: "auto",
+            border: "3px solid black",
+            margin: "10px 10px 0px 5px",
+            borderRadius: "10px 10px 10px 10px",
+            borderColor: "Background",
+            marginTop: "20px",
+            // marginLeft: "15px",
+            flexDirection: "row",
+            overflow: "auto",
+            flexWrap: "wrap",
+            justifyContent: "left",
+            "&::-webkit-scrollbar": {
+              display: "none"
+            },
+            gap: 3
           }}
         >
           <Typography
