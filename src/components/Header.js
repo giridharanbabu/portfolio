@@ -29,6 +29,7 @@ const ProfileAvatar = styled(Avatar)({
   width: 150,
   height: 150,
   border: "3px solid white",
+  marginTop: '5px',
   borderRadius: "50%",
   boxShadow: "5px 5px 10px rgba(0,0,0,0.2)",
 });
@@ -135,7 +136,7 @@ const Headers = ({ setActiveTab }) => {
           boxShadow: "5px 0px 5px 5px #888888",
         }}>
         <ProfileContainer>
-          <ProfileAvatar src="./g.jpg" alt="Profile Picture" />
+          <ProfileAvatar src="./WhatsApp Image 2025-02-11 at 07.50.04_1f032223.jpg" alt="Profile Picture" />
           <Card
             sx={{
               display: "flex",

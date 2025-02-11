@@ -25,7 +25,8 @@ function App() {
       if (newIndex >= 0 && newIndex < sections.current.length) {
         const targetSection = sections.current[newIndex];
         if (targetSection) {
-        targetSection.scrollIntoView({ behavior: "smooth" });
+          scrollContainerRef.current.scrollLeft = targetSection.offsetLeft
+        // targetSection.scrollIntoView({ behavior: "smooth" });
         setCurrentSection(newIndex);
         }
       }
