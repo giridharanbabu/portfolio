@@ -212,12 +212,12 @@ const Certifications = () => {
         key={index}
         sx={{
           minWidth: 200,
-          maxWidth: 250,
+          maxWidth: 350,
           height: "120px",
           display: "flex",
           flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
+          justifyContent: "left",
+          alignItems: "left",
         }}
         variant="outlined"
       >
