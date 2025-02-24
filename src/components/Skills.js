@@ -10,6 +10,9 @@ import BuildIcon from "@mui/icons-material/Build";
 import DataUsageIcon from "@mui/icons-material/DataUsage";
 import AutoGraphIcon from "@mui/icons-material/AutoGraph";
 import SettingsIcon from "@mui/icons-material/Settings";
+import CloseIcon from "@mui/icons-material/Close";
+import { IconButton } from "@mui/joy";
+
 import "./skills.scss"
 const skills = {
   "Programming Languages": { icon: <CodeIcon />, items: ["Python", "SQL", "React", "Go (Beginner)"] },
@@ -24,12 +27,12 @@ const skills = {
 
 export default function SkillsCard() {
   const [hoveredCategory, setHoveredCategory] = useState(null);
-  const [anchorPosition, setAnchorPosition] = useState({ top: 0, left: 0 });
+  // const [anchorPosition, setAnchorPosition] = useState({ top: 0, left: 0 });
 
   const handleMouseEnter = (event, category) => {
     clearTimeout(window.hoverTimeout);
-    const rect = event.currentTarget.getBoundingClientRect();
-    setAnchorPosition({ top: rect.top, left: rect.right + 10 });
+    // const rect = event.currentTarget.getBoundingClientRect();
+    // setAnchorPosition({ top: rect.top, left: rect.right + 10 });
     setHoveredCategory(category);
   };
 
@@ -68,15 +71,26 @@ export default function SkillsCard() {
             variant="outlined"
             sx={{
               position: "absolute",
-              top: anchorPosition.top,
-              left: anchorPosition.left,
-              maxWidth: 250,
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              maxWidth: 300,
               p: 2,
             }}
             onMouseEnter={() => setHoveredCategory(hoveredCategory)}
             onMouseLeave={handleMouseLeave}
           >
             <CardContent>
+              <IconButton
+                onClick={() => setHoveredCategory(null)}
+                sx={{
+                  position: "absolute",
+                  top: 5,
+                  right: 5,
+                }}
+              >
+                <CloseIcon />
+              </IconButton>
               <Typography level="h5">{hoveredCategory}</Typography>
               <List>
                 {skills[hoveredCategory].items.map((skill) => (

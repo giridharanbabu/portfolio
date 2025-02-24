@@ -149,6 +149,8 @@ import Typography from "@mui/joy/Typography";
 import CardContent from "@mui/joy/CardContent";
 import Modal from "@mui/joy/Modal";
 import "./certification.scss"; // Importing the styles
+import CloseIcon from "@mui/icons-material/Close";
+import { IconButton } from "@mui/joy";
 
 const Certification_list = [
   {
@@ -251,6 +253,15 @@ const Certifications = () => {
           <Typography variant="h6" className="modal-title">
             File Preview
           </Typography>
+           <IconButton
+            onClick={() => setOpen(false)}
+            sx={{
+              position: "absolute",
+              top: 5,
+              right: 5,
+            }}> <CloseIcon />
+              </IconButton>
+          
          
           {file && typeof file === "string" && file.endsWith(".pdf") ? (
             <iframe src={file} className="modal-iframe" title="File Preview" />

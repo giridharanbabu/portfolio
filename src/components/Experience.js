@@ -234,6 +234,7 @@ import {
 import Card from "@mui/joy/Card";
 import IconButton from "@mui/joy/IconButton";
 import Link from "@mui/joy/Link";
+import CloseIcon from "@mui/icons-material/Close";
 import CardOverflow from "@mui/joy/CardOverflow";
 import Typography from "@mui/joy/Typography";
 import CardContent from "@mui/joy/CardContent";
@@ -373,6 +374,18 @@ const Experience = () => {
           </DialogTitle>
           <Divider />
           <DialogContent>
+
+              {/* Close Button */}
+              <IconButton
+                onClick={() => setOpen(false)}
+                sx={{
+                  position: "absolute",
+                  top: 5,
+                  right: 5,
+                }}
+              >
+                <CloseIcon />
+              </IconButton>
             <Typography>
               <ul>
                 {selectedJob?.description?.split("\n").map((item, idx) => (
