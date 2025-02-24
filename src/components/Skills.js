@@ -70,9 +70,9 @@ export default function SkillsCard() {
           <Card
             variant="outlined"
             sx={{
-              position: "absolute",
-              top: "50%",
-              left: "50%",
+              position: "fixed",
+              top: "70%",
+              left: "40%",
               transform: "translate(-50%, -50%)",
               maxWidth: 300,
               p: 2,

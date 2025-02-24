@@ -88,7 +88,7 @@
     outline: none;
     overflow: auto;
     max-height: 90vh;
-    max-width: 70vw;
+    max-width: 90vw;
     width: 600px; /* Set width */
   }
   
@@ -107,7 +107,7 @@
     .certifications-card {
         width: 80%;
         height: auto;
-        justify-content: center;
+        justify-content: left;
         align-items: left;
         text-align: left;
         white-space: normal;
@@ -120,12 +120,11 @@
         white-space: nowrap;
         justify-content: left;
         align-items: left;
-        max-width: 400px;
     }
 
     .certification-item {
-        // min-width: 300px;
-        // max-width: 400px;
+        min-width: 250px;
+        max-width: 200px;
         height: auto;
 
     }

@@ -213,10 +213,12 @@ const Certifications = () => {
         sx={{
           minWidth: 200,
           maxWidth: 350,
-          height: "120px",
+          height: 140,
           display: "flex",
           flexDirection: "column",
+          overflowy: "auto",
           justifyContent: "left",
+
           alignItems: "left",
         }}
         variant="outlined"
