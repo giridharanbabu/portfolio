@@ -336,15 +336,15 @@
   }
   .education-institute {
     font-size: 0.9rem; /* Reduce font size for smaller screens */
-    max-width: 100%; /* Ensures responsiveness */
+    max-width: 90%; /* Ensures responsiveness */
     display: block; /* Allows wrapping */
 }
 
   .education-item,
   .education-card {
-      width: 90%;
+      width: 89%;
       text-align: left;
-      // margin: 5px auto; /* Ensures spacing */
+      margin: 5px auto; /* Ensures spacing */
       word-wrap: break-word;
       white-space: normal;
   }

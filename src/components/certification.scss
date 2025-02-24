@@ -36,7 +36,7 @@
   
   /* Scrollbar Styling */
   .certifications-container::-webkit-scrollbar {
-    height: 6px;
+    display: none
   }
   
   .certifications-container::-webkit-scrollbar-thumb {
@@ -59,15 +59,18 @@
     // padding: 10px;
     background: white;
     box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scrollbar-width: none;
   }
   .certification-content {
     width: 20%;
 
   }
   
-//   .certification-content::-webkit-scrollbar {
-//     display: none;
-//   }
+  .certification-item::-webkit-scrollbar {
+    display: none;
+  }
   
   .certification-footer {
     display: flex;

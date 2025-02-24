@@ -216,10 +216,11 @@ const Certifications = () => {
           height: 140,
           display: "flex",
           flexDirection: "column",
-          overflowy: "auto",
+          // overflowy: "auto",
           justifyContent: "left",
-
+          scrollbarWidth: "none",
           alignItems: "left",
+
         }}
         variant="outlined"
       >
