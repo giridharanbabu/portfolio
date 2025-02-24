@@ -70,12 +70,14 @@ export default function SkillsCard() {
           <Card
             variant="outlined"
             sx={{
-              position: "fixed",
+              position: "absolute",
               top: "70%",
-              left: "40%",
+              left: "35%",
               transform: "translate(-50%, -50%)",
-              maxWidth: 300,
-              p: 2,
+              maxWidth: 200,
+              justifyContent: "center",
+              alignItems: "left",
+              p: 3,
             }}
             onMouseEnter={() => setHoveredCategory(hoveredCategory)}
             onMouseLeave={handleMouseLeave}
