@@ -1,0 +1,119 @@
+// Global Styles
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  // Header Styles
+  .header-container {
+    position: static;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  // Scroll Container
+  .scroll-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+  
+  // Scrollable Content
+  // .scroll-content {
+  //   display: flex;
+  //   width: 100%;
+  //   overflow-x: auto;
+  //   scroll-behavior: smooth;
+  //   scrollbar-width: none; // Hide scrollbar in Firefox
+  //   -ms-overflow-style: none; // Hide scrollbar in IE
+  // }
+  
+  // Section Styles
+  // .section {
+  //   display: flex;
+  //   flex-direction: row;
+  //   gap: 5px;
+  //   padding: 20px;
+  //   min-width: 100%;
+  //   justify-content: center;
+  // }
+  .scroll-content {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 100%;
+    white-space: nowrap;
+  }
+  
+  .section {
+    flex-shrink: 0; // Prevents shrinking when scrolling
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skills-section {
+    width: 30%;
+    min-width: 300px; // Ensures a minimum width for responsiveness
+  }
+  
+  .experience-section {
+    width: 70%;
+    min-width: 700px;
+  }
+  
+  .education-section,
+  .certifications-section {
+    width: 50%;
+    min-width: 500px;
+  }
+  
+  // Button Styles
+  .nav-button {
+    position: absolute;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+  
+  // // Mobile Styles
+  // @media (max-width: 768px) {
+  //   .scroll-container {
+  //     flex-direction: column;
+  //   }
+  
+  //   .nav-button {
+  //     display: none;
+  //   }
+  
+  //   .section {
+  //     flex-direction: column;
+  //     align-items: center;
+  //     gap: 10px;
+  //   }
+  // }
+  @media (max-width: 768px) {
+    .scroll-content {
+      flex-direction: column; /* Stack sections vertically */
+      overflow-x: hidden;
+    }
+  
+    .section {
+      // width: 100%; /* Full width for each section */
+      min-width: unset;
+    }
+  
+    .skills-section,
+    .experience-section,
+    .education-section,
+    .certifications-section {
+      width: 100%;
+    }
+  }

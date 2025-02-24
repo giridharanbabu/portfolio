@@ -1,0 +1,133 @@
+.certifications-card {
+    max-width: 600px;
+    height: 250px;
+    // margin: auto;
+    margin-left: 1px;
+    padding: 16px;
+    text-align: left;
+    // position: relative;
+    background: #f8f9fa;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px 5px #888888;
+    gap: 10px;
+    overflow: hidden; /* Prevents overflow issues */
+  }
+  
+  /* Proper spacing between header and cards */
+  .certifications-title {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 15px; /* More space between title and first row of cards */
+    flex-shrink: 0;
+  }
+  
+  .certifications-container {
+    display: flex;
+    flex-direction: row; /* Aligns items in a row */
+    flex-wrap: nowrap; /* Prevents wrapping */
+    overflow-x: auto; /* Enables horizontal scrolling if needed */
+    gap: 10px; /* Space between items */
+    padding-bottom: 10px;
+    width: 100%; /* Ensure full width */
+  }
+  
+  
+  /* Scrollbar Styling */
+  .certifications-container::-webkit-scrollbar {
+    height: 6px;
+  }
+  
+  .certifications-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  
+  /* Ensure card size matches experience card */
+  .certification-item {
+    flex: 0 0 auto; /* Prevents resizing */
+    min-width: 200px; /* Adjust width */
+    max-width: 250px; /* Prevent cards from growing too large */
+    height: 120px; /* Adjust height */
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left; /* Align content horizontally */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    // padding: 10px;
+    background: white;
+    box-sizing: border-box;
+  }
+  .certification-content {
+    width: 20%;
+
+  }
+  
+//   .certification-content::-webkit-scrollbar {
+//     display: none;
+//   }
+  
+  .certification-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+  }
+  
+  /* Modal Styles */
+  .modal-style {
+    position: fixed; /* Ensures modal stays in view */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the modal */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    outline: none;
+    overflow: auto;
+    max-height: 90vh;
+    max-width: 90vw;
+    width: 600px; /* Set width */
+  }
+  
+  .modal-title {
+    margin-bottom: 10px;
+  }
+  
+  .modal-iframe {
+    height: 450px;
+    width: 100%;
+    overflow: auto;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 480px) {
+    .certifications-card {
+        width: 80%;
+        height: auto;
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+        white-space: normal;
+        display: flex;
+    }
+  
+    .certifications-container {
+        flex-direction: column; /* Keep horizontal alignment */
+        overflow-x: auto; /* Allow scrolling */
+        white-space: nowrap;
+        justify-content: left;
+        align-items: left;
+    }
+
+    .certification-item {
+        min-width: 250px;
+        max-width: 200px;
+        height: auto;
+
+    }
+
+  }
+  
