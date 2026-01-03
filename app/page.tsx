@@ -1,77 +1,84 @@
 'use client'
 
-import {
-  UserOutlined,
-  ProjectOutlined,
-  ExperimentOutlined,
-  TrophyOutlined,
-  BookOutlined,
-  RocketOutlined,
-  BulbOutlined,
-} from '@ant-design/icons'
+import { useState } from 'react'
+import ProfileCard from '@/app/components/ProfileCard'
+import EventsCard from '@/app/components/EventsCard'
+import HighlightsCard from '@/app/components/HighlightsCard'
+import Tabs from '@/app/components/Tabs'
+import TopIcons from '@/app/components/TopIcons'
 
-const icons = [
-  { key: 'About', icon: <UserOutlined /> },
-  { key: 'Projects', icon: <ProjectOutlined /> },
-  { key: 'Experience', icon: <ExperimentOutlined /> },
-  { key: 'Certifications', icon: <TrophyOutlined /> },
-  { key: 'Education', icon: <BookOutlined /> },
-  { key: 'Ongoing', icon: <RocketOutlined /> },
-  { key: 'Thoughts', icon: <BulbOutlined /> },
-]
+export default function Home() {
+  const [activeTab, setActiveTab] = useState('Experience')
 
-export default function TopIcons({
-  active,
-  setActive,
-}: {
-  active: string
-  setActive: (tab: string) => void
-}) {
   return (
-    <div className="flex gap-4">
-      {icons.map(item => {
-        const isActive = active === item.key
+    <main className="min-h-screen flex flex-col bg-white">
 
-        return (
-          <button
-            key={item.key}
-            onClick={() => setActive(item.key)}
-            className={`
-              group
-              flex items-center gap-2
-              h-9
-              px-1.5
-              rounded-xl
-              transition-all duration-200
-              ${
-                isActive
-                  ? 'bg-green-200/70 text-green-800 shadow-sm'
-                  : 'text-slate-500 hover:bg-yellow-100/70 hover:text-slate-800'
-              }
-            `}
-          >
-            {/* ICON */}
-            <span className="text-sm">{item.icon}</span>
+      {/* ================= TOP BAR ================= */}
+      <header className="
+          sticky top-0 z-50
+          h-14
+          flex items-center justify-center
+          px-3 sm:px-6
+          border-b border-green-200
+          bg-gradient-to-r from-green-100 via-lime-100 to-yellow-100
+        ">
+        {/* <TopIcons active={activeTab} setActive={setActiveTab} /> */}
+        <TopIcons
+          active={activeTab}
+          setActive={setActiveTab}
+          className="w-full max-w-md mx-auto"
+        />
+      </header>
 
-            {/* LABEL */}
-            <span
-              className="
-                max-w-0
-                overflow-hidden
-                whitespace-nowrap
-                text-sm
-                font-medium
-                transition-all duration-200
-                group-hover:max-w-[120px]
-                group-hover:opacity-100
-                opacity-0
-              "
-            >
-              {item.key}
-            </span>
-          </button>
-        )
-      })}
-    </div>
+      {/* ================= MAIN ================= */}
+      <div className="
+        flex-1
+        max-w-[1400px]
+        mx-auto
+        px-4 sm:px-6
+        pt-4 sm:pt-8
+        grid
+        grid-cols-1
+        lg:grid-cols-[260px_minmax(0,1fr)_220px]
+        gap-4 lg:gap-6
+      ">
+
+        {/* LEFT COLUMN */}
+        <aside className="
+          flex flex-col gap-4
+          order-1
+          lg:order-none
+        ">
+          <ProfileCard />
+          <EventsCard />
+        </aside>
+
+        {/* CENTER */}
+        <section className="
+          order-2 lg:order-none
+          lg:h-[calc(100vh-56px)]
+          lg:overflow-y-auto
+          pb-4
+        ">
+          <div className="w-[768px] max-w-full mx-auto pr-2">
+            <Tabs active={activeTab} />
+          </div>
+        </section>
+
+        {/* RIGHT */}
+        <aside
+          className="
+            order-3 lg:order-none
+            -mt-2 sm:mt-0
+            lg:h-[calc(100vh-56px)]
+            lg:overflow-y-auto
+            pb-16
+          "
+        >
+          <HighlightsCard />
+        </aside>
+
+      </div>
+    </main>
   )
 }
