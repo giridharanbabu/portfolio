@@ -26,7 +26,7 @@ export default function Home() {
         <TopIcons
           active={activeTab}
           setActive={setActiveTab}
-          className="w-full max-w-md mx-auto"
+          
         />
       </header>
 
