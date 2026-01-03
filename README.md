@@ -4,6 +4,7 @@
 ## Overview
 
 This is a React-based portfolio application that displays various sections, including skills, experience, education, and certifications. The app supports horizontal scrolling between sections, with manual and automatic scrolling features.
+##
 
 ## Features
 
