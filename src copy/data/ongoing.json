@@ -1,0 +1,69 @@
+[{
+  "id": "mycoir-political-intelligence",
+  "title": "MyCoir – Political Intelligence & Activity Tracking Platform",
+  "summary": "Civic intelligence platform for political member tracking and public engagement",
+  "description": "Designed and developed a full-stack political intelligence platform to manage, monitor, and showcase political representatives’ activities across state, district, taluk, subdivision, and village levels, enabling transparency, public participation, and data-driven governance.",
+  "bullets": [
+    "Designed hierarchical data models for state, district, taluk, subdivision, and village-level political representation",
+    "Built role-based dashboards to track political members’ activities, initiatives, and performance metrics",
+    "Implemented content publishing features for announcements, updates, and constituency engagement",
+    "Developed public issue reporting and polling modules to collect citizen feedback and opinions",
+    "Built real-time dashboards visualizing activity completion, engagement metrics, and constituency coverage",
+    "Implemented approval workflows and moderation mechanisms for public posts and issues",
+    "Designed analytics views to measure impact and outreach at each administrative level",
+    "Integrated authentication and authorization for admin, representatives, and public users",
+    "Optimized backend APIs for scalable data retrieval across large hierarchical datasets",
+    "Planned extensible architecture to support future integrations with analytics and AI modules"
+  ],
+  "tech": [
+    "Python",
+    "FastAPI",
+    "PostgreSQL",
+    "React",
+    "Next.js",
+    "Ant Design",
+    "Docker",
+    "REST APIs",
+    "Role-Based Access Control",
+    "Data Visualization"
+  ],
+  "github": "s",
+  "demo": "s",
+  "image": "/logo.png"
+},
+{
+  "id": "ai-grocery-meal-planner",
+  "title": "AI-Powered Grocery Prediction & Meal Planning System",
+  "summary": "Predictive grocery planning and weekly meal recommendation platform",
+  "description": "Developed an AI-driven application that predicts future grocery requirements and generates personalized weekly meal plans based on consumption history, preferences, and nutritional balance, helping users optimize shopping and reduce food waste.",
+  "bullets": [
+    "Designed data pipelines to capture grocery purchase history and meal consumption patterns",
+    "Built machine learning models to predict grocery requirements for upcoming weeks",
+    "Implemented recommendation logic for generating balanced weekly meal plans",
+    "Integrated rule-based and ML-driven approaches for dietary preferences and constraints",
+    "Developed APIs for meal plan generation and grocery list prediction",
+    "Built interactive dashboards to visualize predicted grocery quantities and meal schedules",
+    "Implemented feedback loops to improve prediction accuracy over time",
+    "Optimized models for scalability and real-time inference",
+    "Designed modular architecture to support future integrations with nutrition APIs",
+    "Built a user-friendly interface for meal planning and grocery tracking"
+  ],
+  "tech": [
+    "Python",
+    "Machine Learning",
+    "Pandas",
+    "Scikit-learn",
+    "FastAPI",
+    "Streamlit",
+    "PostgreSQL",
+    "Data Analytics",
+    "Recommendation Systems",
+    "Time Series Forecasting"
+  ],
+  "github": "s",
+  "demo": "s",
+  "image": "/ai.jpg"
+}
+
+
+]
