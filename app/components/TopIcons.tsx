@@ -91,7 +91,7 @@ export default function TopIcons({
               group
               flex items-center gap-2
               h-9
-              px-3
+              px-1.5
               rounded-xl
               transition-all duration-200
               ${
