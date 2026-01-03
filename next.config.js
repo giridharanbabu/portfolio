@@ -5,5 +5,9 @@ const nextConfig = {
     unoptimized: true,
   },
 }
-
+module.exports = {
+  experimental: {
+    optimizeFonts: false,
+  },
+}
 module.exports = nextConfig
