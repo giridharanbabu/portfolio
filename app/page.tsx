@@ -69,11 +69,11 @@
 'use client'
 
 import { useState } from 'react'
-import ProfileCard from '@/components/ProfileCard'
-import EventsCard from '@/components/EventsCard'
-import HighlightsCard from '@/components/HighlightsCard'
-import Tabs from '@/components/Tabs'
-import TopIcons from '@/components/TopIcons'
+import ProfileCard from '@/app/components/ProfileCard'
+import EventsCard from '@/app/components/EventsCard'
+import HighlightsCard from '@/app/components/HighlightsCard'
+import Tabs from '@/app/components/Tabs'
+import TopIcons from '@/app/components/TopIcons'
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState('Experience')
