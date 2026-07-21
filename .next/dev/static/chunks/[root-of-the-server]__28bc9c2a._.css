@@ -385,6 +385,10 @@ img, video {
   margin-right: auto;
 }
 
+.-mt-2 {
+  margin-top: -.5rem;
+}
+
 .mb-1 {
   margin-bottom: .25rem;
 }
@@ -395,10 +399,6 @@ img, video {
 
 .ml-16 {
   margin-left: 4rem;
-}
-
-.ml-2 {
-  margin-left: .5rem;
 }
 
 .mt-1 {
@@ -421,10 +421,6 @@ img, video {
   margin-top: 1.5rem;
 }
 
-.-mt-2 {
-  margin-top: -.5rem;
-}
-
 .flex {
   display: flex;
 }
@@ -445,6 +441,10 @@ img, video {
   height: 3rem;
 }
 
+.h-14 {
+  height: 3.5rem;
+}
+
 .h-8 {
   height: 2rem;
 }
@@ -455,10 +455,6 @@ img, video {
 
 .h-9 {
   height: 2.25rem;
-}
-
-.h-14 {
-  height: 3.5rem;
 }
 
 .max-h-0 {
@@ -477,10 +473,6 @@ img, video {
   min-height: 100vh;
 }
 
-.w-0 {
-  width: 0;
-}
-
 .w-11 {
   width: 2.75rem;
 }
@@ -493,16 +485,16 @@ img, video {
   width: 2rem;
 }
 
+.w-\[768px\] {
+  width: 768px;
+}
+
 .w-\[85\%\] {
   width: 85%;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-\[768px\] {
-  width: 768px;
 }
 
 .min-w-0 {
@@ -523,10 +515,6 @@ img, video {
 
 .max-w-full {
   max-width: 100%;
-}
-
-.max-w-md {
-  max-width: 28rem;
 }
 
 .flex-1 {
@@ -552,10 +540,6 @@ img, video {
 
 .flex-col {
   flex-direction: column;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
 }
 
 .items-start {
@@ -666,12 +650,12 @@ img, video {
   border-width: 1px;
 }
 
-.border-t {
-  border-top-width: 1px;
-}
-
 .border-b {
   border-bottom-width: 1px;
+}
+
+.border-t {
+  border-top-width: 1px;
 }
 
 .border-green-200 {
@@ -790,6 +774,11 @@ img, video {
   padding: 2rem;
 }
 
+.px-1\.5 {
+  padding-left: .375rem;
+  padding-right: .375rem;
+}
+
 .px-3 {
   padding-left: .75rem;
   padding-right: .75rem;
@@ -815,8 +804,20 @@ img, video {
   padding-bottom: 1rem;
 }
 
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
 .pl-5 {
   padding-left: 1.25rem;
+}
+
+.pr-2 {
+  padding-right: .5rem;
 }
 
 .pt-1 {
@@ -833,18 +834,6 @@ img, video {
 
 .pt-4 {
   padding-top: 1rem;
-}
-
-.pb-16 {
-  padding-bottom: 4rem;
-}
-
-.pb-4 {
-  padding-bottom: 1rem;
-}
-
-.pr-2 {
-  padding-right: .5rem;
 }
 
 .text-left {
@@ -1066,10 +1055,6 @@ body {
   --tw-shadow: 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.group:hover .group-hover\:w-\[110px\] {
-  width: 110px;
 }
 
 .group:hover .group-hover\:max-w-\[120px\] {

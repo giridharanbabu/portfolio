@@ -497,132 +497,286 @@ __turbopack_context__.s([
 ]);
 const profile = {
     name: 'Giridharan Chandrababu',
-    role: 'Senior Software Engineer (AI & Data Science)',
+    role: 'AI Engineer | Generative AI, Agentic Systems & Cloud-Native Solutions',
     summary: [
-        `Software Engineer with 7+ years of experience in building scalable, secure cloud-native applications and automation workflows using Python. Adept at designing and deploying end-to-end data pipelines, cloud-native applications, and analytics platforms across multi-cloud environments, including Amazon Web Services (AWS), Google Cloud Platform (GCP) and on-premises infrastructure.`,
-        `Proven expertise in developing interactive data applications and dashboards using Streamlit, including custom components such as recommendation carousels for content discovery, real-time visualizations, and LLM-integrated UIs to support data-driven decision-making and document intelligence workflows.`,
-        `Generative AI & NLP: Hands-on in LLMs, Retrieval-Augmented Generation (RAG), agentic AI frameworks, and MCP server development using LangChain, Hugging Face, GPT, OpenAI APIs, and vector databases (FAISS, Typesense, Pinecone, Qdrant, Chroma). Built LLM-integrated applications with Streamlit, and EKS-based deployments, including custom chat interfaces and document.`,
-        `Machine Learning & Model Optimization: Hands-on with supervised & unsupervised learning (Random Forest, XGBoost, Decision Trees, SVM, K-Means) and deep learning frameworks (TensorFlow, PyTorch) for scalable AI solutions.`,
-        `AWS SageMaker & Cloud AI: Skilled in training, deploying, and managing ML models on AWS SageMaker, integrating with S3, Lambda, API Gateway, AWS Bedrock, and embedding models for production AI applications.`,
-        `Cloud & DevOps: Expertise in Azure, GCP, leveraging Azure AI services (App Service, Functions, API Management, Logic Apps, DevOps) and GCP services (BigQuery, Vertex AI, Cloud Run, Cloud Functions, Pub/Sub, Dataflow, and Cloud Storage).`,
-        `Backend & API Development: Proficient in FastAPI, Docker, Kubernetes (GKE), and microservices architecture, delivering scalable and efficient AI-powered APIs.`,
-        `Big Data & Orchestration: Experience in ETL pipelines, Apache Airflow, Spark MLlib, Kubernetes, and GCP Dataflow & Dataproc for real-time and batch processing workflows.`,
-        `Performance Optimization & CI/CD: Skilled in auto-scaling, caching strategies, and CI/CD pipelines using GCP Cloud Build, GitHub Actions, ensuring high-performance AI applications.`,
-        `Data Visualization & BI: Strong proficiency in Tableau, Metabase, Superset, Power BI, Matplotlib, Seaborn, and Plotly, enabling AI-driven insights.`,
-        `Security & Cloud Architecture: Deep understanding of Azure Resource Manager (ARM), Azure Active Directory (AAD), GCP IAM, networking, and security best practices for AI/ML applications.`,
-        `Linux & UNIX Expertise: Experienced in Linux/UNIX environments, with programming and debugging skills in UNIX Shell Scripting for automation.`
-    ]
+        `Software/AI Engineer with 7+ years of progressive engineering experience, including recent hands-on leadership of Generative AI and Agentic AI initiatives — building LLM-powered applications, RAG pipelines, multi-agent systems, and MCP server architectures in Python.`,
+        `Gen AI & Agentic Systems: LangChain and LangGraph for graph-based multi-agent orchestration and workflow automation; OpenAI GPT, Claude, and LLaMA models; Hugging Face Transformers; AWS Bedrock; prompt engineering; and semantic search across Pinecone, FAISS, Qdrant, Chroma, Typesense, and AWS OpenSearch.`,
+        `Cloud-Native Delivery: AWS (EC2, Lambda, ECS, EKS, S3, API Gateway, SageMaker, CloudWatch, IAM), with additional multi-cloud experience on Azure (App Service, Functions, API Management, Logic Apps, ARM, Azure AD) and GCP (BigQuery, Vertex AI, Cloud Run, Dataflow, Dataproc, Pub/Sub).`,
+        `Backend, API & Orchestration: FastAPI, Pydantic, Docker, Kubernetes/GKE, and microservices architecture; data orchestration with Apache Airflow, ETL pipelines, Spark MLlib, Redis, and Celery for real-time and batch workloads.`,
+        `ML, Evaluation & BI: TensorFlow and PyTorch alongside classical ML (Random Forest, XGBoost, SVM, K-Means); automated quality evaluation with PyTest, DeepEval, and RAGAS (Precision@K/Recall@K); AI-driven insights via Tableau, Power BI, Metabase, and Superset.`,
+        `LLM Fine-Tuning & MLOps: Hands-on fine-tuning of T5-based ranking models for personalization, and full MLOps lifecycle management (training, evaluation, deployment, monitoring) with Kubeflow and Vertex AI Pipelines on GKE.`,
+        `Domain & Delivery: Applied experience across financial services, wealth management, insurance, and media/OTT streaming content/data ecosystems; partners closely with product managers and domain experts to align technical solutions to business goals within Agile Scrum/Kanban delivery.`
+    ],
+    skills: {
+        'Gen AI / Agentic / RAG': [
+            'LLM pipelines',
+            'Agentic AI',
+            'MCP server architecture',
+            'LangChain',
+            'LangGraph (graph-based agent orchestration)',
+            'RAG pipelines',
+            'prompt engineering',
+            'AWS Bedrock',
+            'OpenAI GPT',
+            'Claude',
+            'LLaMA',
+            'Hugging Face Transformers',
+            'LLM fine-tuning (T5)'
+        ],
+        'Vector Search & Retrieval': [
+            'Pinecone',
+            'FAISS',
+            'Qdrant',
+            'Chroma',
+            'Typesense',
+            'AWS OpenSearch',
+            'Elasticsearch',
+            'embedding pipelines',
+            'hybrid/semantic search',
+            'similarity-search and index optimization'
+        ],
+        'AWS': [
+            'EC2',
+            'Lambda',
+            'ECS',
+            'EKS',
+            'S3',
+            'API Gateway',
+            'SageMaker',
+            'CloudWatch',
+            'IAM',
+            'Bedrock'
+        ],
+        'Other Cloud (Azure / GCP)': [
+            'Azure App Service',
+            'Functions',
+            'API Management',
+            'Logic Apps',
+            'DevOps',
+            'ARM',
+            'Azure AD',
+            'GCP BigQuery',
+            'Vertex AI',
+            'Vertex AI Pipelines',
+            'Cloud Run',
+            'Cloud Functions',
+            'Pub/Sub',
+            'Dataflow',
+            'Dataproc',
+            'Cloud Storage',
+            'Cloud Scheduler',
+            'Recommendations AI',
+            'GKE'
+        ],
+        'Backend & APIs': [
+            'Python',
+            'FastAPI',
+            'Pydantic',
+            'RESTful API design',
+            'microservices',
+            'Streamlit'
+        ],
+        'Data Engineering & Orchestration': [
+            'Apache Airflow (DAGs)',
+            'ETL pipeline design',
+            'Spark MLlib',
+            'Kafka',
+            'Redis',
+            'Celery',
+            'MongoDB',
+            'DocumentDB',
+            'PostgreSQL',
+            'SQL',
+            'Snowflake'
+        ],
+        'DevOps & IaC': [
+            'Docker',
+            'Kubernetes/GKE',
+            'Terraform',
+            'IaC',
+            'ARM Templates',
+            'Helm',
+            'JX-GitOps',
+            'GitHub Actions',
+            'GCP Cloud Build',
+            'CI/CD pipelines'
+        ],
+        'Machine Learning & Deep Learning': [
+            'TensorFlow',
+            'PyTorch',
+            'Keras',
+            'CNNs',
+            'Random Forest',
+            'XGBoost',
+            'Decision Trees',
+            'SVM',
+            'K-Means'
+        ],
+        'Testing & Evaluation': [
+            'PyTest',
+            'Unittest',
+            'DeepEval',
+            'RAGAS',
+            'Precision@K/Recall@K',
+            'performance testing',
+            'load testing'
+        ],
+        'BI & Visualization': [
+            'Tableau',
+            'Power BI',
+            'Looker',
+            'Metabase',
+            'Superset',
+            'Kibana',
+            'Matplotlib',
+            'Seaborn',
+            'Plotly'
+        ],
+        'Document Intelligence & OCR': [
+            'PyMuPDF',
+            'PyTesseract',
+            'Azure Cognitive Services'
+        ],
+        'Domain Knowledge': [
+            'Financial services',
+            'wealth management',
+            'insurance',
+            'enterprise content management (ECM)',
+            'media/OTT streaming'
+        ]
+    }
 };
 const experience = [
     {
-        company: 'Veracity IT Solutions INC (Client: Northly Risk, Toronto)',
-        role: 'Software Engineer – AI & Data Science',
-        period: 'Nov 2024 – Mar 2025',
+        company: 'Brigaly',
+        role: 'AI Developer',
+        period: 'Aug 2025 – Present',
+        description: 'Leading development of AI-powered content intelligence solutions for educational platforms to improve content quality, credibility, and compliance prior to publishing.',
         highlights: [
-            'Translated complex business challenges into mathematical and statistical hypotheses and designed detailed analysis plans to quantify business value',
-            'Researched, developed, and validated machine learning and deep learning models for enterprise risk management, focusing on claim financials, indemnity benefits, and return-to-work analysis',
-            'Derived actionable insights by interpreting model predictions and analyzing large-scale worker compensation claims data to support profitable business decisions',
-            'Developed, recommended, and implemented procedural and analytical improvements to increase accuracy and effectiveness of production ML systems',
-            'Designed and implemented natural language generation (NLG) models using RNNs and Variational Autoencoders (VAEs) to generate future claim notes using Keras and TensorFlow',
-            'Managed and analyzed time-series data and large structured datasets using advanced statistical techniques to answer business-critical questions',
-            'Collaborated closely with software engineering teams to integrate ML solutions into production systems using Python-based RESTful APIs',
-            'Worked extensively with big data technologies, including PySpark and Spark MLlib, for scalable data processing and machine learning',
-            'Trained, evaluated, and deployed ML/DL models on Google Cloud Platform (GCP) and AWS',
-            'Implemented an autoencoder-based anomaly detection system to identify unusual or high-risk claims for further investigation',
-            'Worked across heterogeneous environments including MySQL, Oracle, Cassandra, Linux, Spark, Docker, and Kubernetes'
+            'Lead design and development of an AI-powered content review system using Python, FastAPI, MongoDB, Redis, Celery, Pinecone, LangChain, and LangGraph — architecting the agentic workflow end to end',
+            'Built an automated Content Readiness Pipeline evaluating grammar, readability, structure, tone, trust, and audience alignment, driving measurable improvements in publishing quality and compliance',
+            'Designed multi-agent, graph-based orchestration with LangGraph for multi-step AI review workflows, and implemented NLP analysis (spaCy) alongside LLM-based review using Ollama (local) and AWS-hosted OpenAI models (production)',
+            'Generated AI-driven content suggestions — rewrites, headlines, summaries, and tags — to support human moderation workflows',
+            'Architected scalable background processing with Redis + Celery, including chunk-based processing and embedding generation for large-document semantic understanding',
+            'Built a semantic search system on Pinecone for similarity search, duplicate detection, and content retrieval; implemented RAG pipelines in LangChain for context-grounded review',
+            'Designed and deployed the AWS architecture (ECS/EC2, EKS-based deployments, DocumentDB, ElastiCache Redis, S3, IAM, CloudWatch) supporting production Streamlit-based chat interfaces and document intelligence workflows',
+            'Established evaluation and quality gates using PyTest, DeepEval, RAGAS, Precision@K, and Recall@K, plus performance testing to validate retrieval and generation accuracy',
+            'Delivered a production-ready AI content intelligence platform combining automated review, human-in-the-loop moderation, and intelligent search — strengthening institutional trust and content governance'
         ]
     },
     {
-        company: 'DataFabricX',
+        company: 'DataFabricX, Chennai, India',
         role: 'AI & Data Engineer',
-        period: 'Sep 2023 – Sep 2024',
+        period: 'Sep 2023 – Mar 2025',
+        description: 'DataFabricX is an AI-enabled Enterprise Content Management (ECM) and Business Systems Integration provider serving finance, wealth management, and insurance clients with AI-powered search, generative AI, and business integration solutions.',
         highlights: [
-            'Developed and maintained RESTful APIs using FastAPI and Pydantic for real-time data retrieval and batch document processing',
-            'Designed and implemented end-to-end Retrieval-Augmented Generation (RAG) pipelines for AI-powered enterprise search, including data extraction, indexing, semantic and hybrid retrieval, and ranker integration',
-            'Integrated Typesense for high-performance vector and hybrid search to significantly improve retrieval precision and response relevance',
-            'Built workflow orchestration and retrieval flows using LangChain, automating query routing, embedding generation, document chaining, and response composition',
-            'Implemented OCR pipelines using PyMuPDF, PyTesseract, and Azure Cognitive Services to process scanned, native, and low-quality document images',
-            'Automated ETL pipelines using Python and SQL to efficiently ingest structured and unstructured data into vector databases',
-            'Developed and deployed an intelligent Document QA chatbot with conversation history retention and scalable document understanding',
-            'Integrated Instabase for document workflow automation and enterprise document processing',
-            'Worked extensively with OpenAI APIs, fine-tuning parameters and prompts to optimize NLP-driven enterprise search and QA performance',
-            'Built Streamlit-based demo applications to showcase AI document intelligence capabilities to stakeholders',
-            'Deployed solutions on-premises using Windows Services, batch scripts, and Docker for secure and scalable releases',
-            'Conducted proof-of-concept implementations using AWS Bedrock for generative AI use cases such as summarizing large email threads and extracting action items',
-            'Ensured system reliability and maintainability through comprehensive unit and integration testing using PyTest'
+            'Developed RESTful APIs using FastAPI and Pydantic for real-time data retrieval and batch processing supporting enterprise search and document workflows',
+            'Designed and implemented end-to-end RAG pipelines for AI-powered search — data extraction, indexing, semantic/hybrid retrieval, and ranker integration',
+            'Integrated Typesense for high-performance vector search, improving retrieval precision for enterprise document search',
+            'Built workflow orchestration and retrieval flows using LangChain, automating query routing, embedding generation, and document chaining logic across multi-step pipelines',
+            'Implemented OCR pipelines with PyMuPDF, PyTesseract, and Azure Cognitive Services to process diverse document types, including low-quality scanned images',
+            'Automated ETL pipelines in Python and SQL for efficient ingestion into vector databases, supporting downstream RAG and search use cases',
+            'Delivered AI/LLM solutions using OpenAI, LangChain, LangGraph, RAG, and prompt engineering, applying DevOps practices (GitHub, Terraform, Infrastructure-as-Code, ARM) and CI/CD across the SDLC',
+            'Developed and deployed an intelligent Document QA chatbot with conversation-history retention, scalable document understanding, and Instabase integration for workflow automation',
+            'Tuned OpenAI API parameters (including fine-tuning configuration) to optimize NLP-driven search relevance and response quality',
+            'Built a context-aware Document QA chatbot with a Streamlit front end for stakeholder demos',
+            'Deployed solutions on-premises using Windows services, batch scripts, and Docker for scalable, secure releases',
+            'Led a proof-of-concept on AWS Bedrock for generative AI use cases, including summarizing large email threads and extracting key action points from enterprise communications',
+            'Ensured system reliability and maintainability through unit and integration testing (PyTest, Unittest)'
         ]
     },
     {
-        company: 'Quickplay Media',
-        role: 'Software Engineer – Data Science',
+        company: 'Quickplay Media, Chennai, India',
+        role: 'Software Engineer',
         period: 'Jan 2022 – Sep 2023',
+        description: 'Quickplay Media is a cloud-native platform provider for premium video streaming, partnering with top-tier media companies on OTT content, live sports streaming, and media analytics.',
         highlights: [
-            'Designed and developed scalable, automated batch and streaming data pipelines on Google Cloud Platform (GCP) for ingesting, cleaning, and transforming large-scale datasets',
-            'Built batch and real-time pipelines using Dataflow to enable near real-time analytics and downstream ML consumption',
-            'Integrated Snowflake with BigQuery and Cloud Storage to support model training, analytics, and BI use cases',
-            'Designed and deployed content-based and user-based recommendation systems, including “Because You Watched”, “Last 5 Watched”, and “Popular Content” features',
-            'Built pipelines to extract behavioral data from Snowflake, preprocess it, and publish results to Cloud Datastore using Cloud Run and Dataflow',
-            'Developed and fine-tuned T5-based ranking models using Hugging Face Transformers to improve personalization and recommendation relevance',
-            'Built proof-of-concept solutions using GCP Recommendations AI and iterated based on stakeholder feedback',
-            'Developed, deployed, and monitored ML models using Vertex AI for batch and real-time inference',
-            'Implemented end-to-end MLOps workflows using Kubeflow and Vertex AI Pipelines for training, evaluation, deployment, and monitoring',
-            'Deployed ML workloads on Google Kubernetes Engine (GKE) with autoscaling for inference workloads',
-            'Set up CI/CD pipelines using GitOps (JX-GitOps) and Helm to manage model versioning and rollouts',
-            'Architected real-time data pipelines using Couchbase, Kafka, Pub/Sub, Cloud Functions, and Cloud Datastore',
-            'Developed audit trail systems to track user interactions across storefronts for analytics and anomaly detection',
-            'Created data marts and dashboards using Looker and Tableau for engagement, churn prediction, content performance, and market analysis',
-            'Automated report generation and scheduling using Cloud Scheduler and Cloud Functions',
-            'Built Streamlit dashboards and interactive POCs to communicate ML insights and business value to stakeholders'
+            'Built scalable, automated data pipelines on GCP for ingesting, cleaning, and transforming data for ML models and analytics, including batch and streaming pipelines with Dataflow and Snowflake → BigQuery/Cloud Storage integration',
+            'Designed and deployed content and user-based recommendation systems (Because You Watched, Last 5 Watched, Popular Content), including behavioral-data pipelines from Snowflake into Cloud Datastore via Cloud Run and Dataflow',
+            'Developed and fine-tuned T5-based ranking models for content recommendations, enhancing personalization through metadata and interaction signals; built a POC on GCP Recommendations AI to demonstrate effectiveness to stakeholders',
+            'Developed and deployed ML models on Vertex AI for batch and real-time inference; implemented MLOps with Kubeflow and Vertex AI Pipelines for end-to-end training, evaluation, deployment, and monitoring',
+            'Deployed AI/ML workloads on GKE with auto-scaling for inference, and set up CI/CD pipelines for model updates using JX-GitOps and Helm',
+            'Architected real-time streaming pipelines (Couchbase → Kafka → Pub/Sub → Cloud Functions → Cloud Datastore) for live content updates and personalization, using Dataflow for real-time log processing and enrichment',
+            'Built an Audit Trail System to track user interactions across storefronts for usage analytics and anomaly detection',
+            'Created data marts and Looker dashboards for user engagement, churn prediction, content performance, and market trend analysis; automated Tableau report generation for stakeholder consumption',
+            'Implemented automated client reporting with Cloud Scheduler and Cloud Functions, covering the full flow from data aggregation to report generation and email delivery',
+            'Built Streamlit dashboards and led stakeholder POCs to communicate the business value of recommendation and churn models, capturing requirements and aligning outcomes with business goals'
         ]
     },
     {
-        company: 'DataFabricX',
-        role: 'Data Scientist',
-        period: 'May 2019 – Dec 2021',
+        company: 'DataFabricX, Chennai, India',
+        role: 'Python Developer & Data Science',
+        period: 'May 2020 – Dec 2021',
+        description: 'Earlier engagement with DataFabricX, an AI-enabled Enterprise Content Management (ECM) and Business Systems Integration provider serving finance, wealth management, and insurance clients.',
         highlights: [
-            'Performed statistical modeling and machine learning analysis under the guidance of senior data scientists',
-            'Developed ML-based document classification systems to organize enterprise documents prior to DMS migration',
-            'Applied NLP techniques for in-depth document text analysis and metadata-driven categorization',
-            'Trained supervised learning models including Random Forest and Support Vector Machines (SVM) for high-accuracy document classification',
-            'Implemented unsupervised clustering using K-means to group and organize similar documents',
-            'Designed and maintained ETL pipelines to ingest documents into Elasticsearch for search and analytics',
-            'Developed Python scripts to automate data extraction, preprocessing, and formatting tasks',
-            'Built automated test scripts and performed load testing for ML dataset generation',
-            'Created 360-degree document analytics dashboards providing real-time visibility into document status and metadata',
-            'Used Kibana and Apache Superset for data visualization and reporting'
+            'Performed statistical modeling and ML analysis to surface data insights under the guidance of the Principal Data Scientist',
+            'Developed a machine learning document classification application to organize and classify enterprise documents, improving accessibility and structure ahead of migration to a Document Management System (DMS)',
+            'Applied NLP techniques for in-depth text analysis, enabling accurate document categorization by content and metadata',
+            'Trained supervised models (Random Forest, SVM) for high-accuracy document classification, and applied K-means clustering to group similar documents and streamline retrieval',
+            'Designed and maintained ETL pipelines from DMS to Elasticsearch for automated ingestion, transformation, and loading of document data',
+            'Automated repetitive data processing tasks (extraction, preprocessing, formatting) via Python scripting, and built scripts to automate test case execution and load testing on generated datasets',
+            'Applied Terraform, ARM templates, and CI/CD practices for building and deploying scalable software and cloud infrastructure',
+            'Built a 360-degree document reporting dashboard (Kibana, Apache Superset) delivering real-time visibility into document metadata, status, and categorization'
         ]
     },
     {
-        company: 'Trusfi Technologies',
-        role: 'Junior Data Scientist',
+        company: 'Trusfi Technologies, Chennai, India',
+        role: 'Jr. Data Scientist',
         period: 'Oct 2018 – Dec 2019',
+        description: 'Trusfi Technologies is a technology-driven company focused on AI-powered content filtering, recommendation engines, and automation solutions.',
         highlights: [
-            'Worked with large-scale structured and unstructured datasets for ML and analytics use cases',
-            'Designed and developed an NLP-based text recommendation system using Keras to improve content discovery',
-            'Developed a deep learning-based nudity detection system using CNNs for automated content moderation',
-            'Applied NLP techniques for text preprocessing, feature extraction, and model training',
-            'Implemented image processing and convolutional neural networks for real-time image classification',
-            'Prepared and executed unit test cases and performed functional, system, and UAT testing',
-            'Conducted design and technical reviews with cross-functional stakeholders',
-            'Participated in the complete project lifecycle from requirements gathering to production support',
-            'Created test plans and backend database test cases',
-            'Worked extensively in Linux-based production environments'
+            'Designed and developed a text recommendation system using Keras and NLP techniques, improving user engagement and content discovery',
+            'Developed a nudity detection system using CNNs and deep learning for real-time image classification, enhancing safe-content delivery capabilities',
+            'Applied NLP methods to preprocess and analyze textual data, enabling effective feature extraction for the recommendation engine',
+            'Prepared and executed unit test cases, and participated in functional/technical reviews and System/Integration/UAT testing to ensure delivery quality',
+            'Participated in the full project lifecycle from requirements through production support, including design reviews and test-plan documentation for back-end database modules'
         ]
     }
 ];
 const projects = [
     {
-        id: 'doc-ai',
-        title: 'AI Document Intelligence Platform',
-        summary: 'Enterprise document search, QA, and summarization using RAG',
-        description: 'Built an end-to-end AI document intelligence platform enabling semantic search, question answering, and summarization across large enterprise document repositories.',
+        id: 'content-intelligence',
+        title: 'AI-Powered Content Intelligence & Review Platform',
+        summary: 'Agentic, LangGraph-orchestrated content review system for educational publishing',
+        description: 'Led design and development of an AI-powered content review system for educational platforms, architecting an end-to-end agentic workflow to evaluate and improve content quality, credibility, and compliance prior to publishing.',
         bullets: [
-            'Designed RAG pipelines using LangChain with vector and hybrid retrieval',
-            'Integrated OCR pipelines using PyMuPDF and Azure Cognitive Services',
-            'Implemented FastAPI-based backend services with secure APIs',
-            'Integrated Typesense for high-performance vector search',
-            'Built context-aware Document QA chatbot with conversation history',
-            'Developed Streamlit UI for enterprise demos and stakeholder POCs'
+            'Built an automated Content Readiness Pipeline evaluating grammar, readability, structure, tone, trust, and audience alignment',
+            'Designed multi-agent, graph-based orchestration with LangGraph for multi-step AI review workflows',
+            'Implemented NLP analysis with spaCy alongside LLM-based review using Ollama (local) and AWS-hosted OpenAI models (production)',
+            'Generated AI-driven content suggestions — rewrites, headlines, summaries, and tags — to support human moderation',
+            'Architected scalable background processing with Redis + Celery, including chunk-based processing and embedding generation',
+            'Built semantic search on Pinecone for similarity search, duplicate detection, and content retrieval; implemented RAG pipelines in LangChain',
+            'Deployed on AWS (ECS/EC2, EKS, DocumentDB, ElastiCache Redis, S3, IAM, CloudWatch) with a production Streamlit chat interface',
+            'Established evaluation and quality gates using PyTest, DeepEval, RAGAS, Precision@K, and Recall@K'
+        ],
+        tech: [
+            'Python',
+            'FastAPI',
+            'LangChain',
+            'LangGraph',
+            'Pinecone',
+            'MongoDB',
+            'Redis',
+            'Celery',
+            'AWS (ECS, EKS, DocumentDB, S3)',
+            'Streamlit',
+            'DeepEval',
+            'RAGAS'
+        ]
+    },
+    {
+        id: 'doc-ai',
+        title: 'AI Document Intelligence & QA Platform',
+        summary: 'Enterprise document search, QA, and summarization using RAG',
+        description: 'Built an end-to-end AI document intelligence platform enabling semantic search, question answering, and summarization across large enterprise document repositories for finance, wealth management, and insurance clients.',
+        bullets: [
+            'Designed end-to-end RAG pipelines using LangChain with semantic and hybrid retrieval, plus ranker integration',
+            'Integrated OCR pipelines using PyMuPDF, PyTesseract, and Azure Cognitive Services for diverse document types',
+            'Implemented FastAPI and Pydantic-based backend services for real-time and batch document workflows',
+            'Integrated Typesense for high-performance vector search, improving retrieval precision',
+            'Built a context-aware Document QA chatbot with conversation-history retention and Instabase workflow integration',
+            'Developed a Streamlit UI for enterprise demos and stakeholder POCs',
+            'Ran a proof-of-concept on AWS Bedrock for summarizing large email threads and extracting action items'
         ],
         tech: [
             'Python',
@@ -631,54 +785,33 @@ const projects = [
             'OpenAI',
             'Azure Cognitive Services',
             'Typesense',
+            'AWS Bedrock',
             'Docker',
             'Streamlit'
         ]
     },
     {
-        id: 'risk-ml',
-        title: 'Risk Analytics & Anomaly Detection Platform',
-        summary: 'Predictive ML models for insurance risk management',
-        description: 'Designed and deployed machine learning and deep learning models for insurance claims risk analysis, anomaly detection, and financial loss prediction.',
-        bullets: [
-            'Feature engineering and large-scale training using PySpark',
-            'Built deep learning models using TensorFlow and Keras',
-            'Implemented autoencoder-based anomaly detection for unusual claims',
-            'Analyzed time-series data for claim financial forecasting',
-            'Integrated ML models into production using Python REST APIs',
-            'Deployed and monitored models on GCP and AWS'
-        ],
-        tech: [
-            'Python',
-            'PySpark',
-            'TensorFlow',
-            'Keras',
-            'GCP',
-            'AWS',
-            'Docker',
-            'Kubernetes'
-        ]
-    },
-    {
         id: 'ott-recommendation',
         title: 'OTT Recommendation & Personalization System',
-        summary: 'Scalable ML pipelines for content personalization',
-        description: 'Built large-scale recommendation systems and ML pipelines for OTT platforms, enabling personalized content discovery and real-time analytics.',
+        summary: 'Scalable ML pipelines for content personalization on GCP',
+        description: 'Built large-scale recommendation systems and MLOps pipelines for an OTT streaming platform, enabling personalized content discovery, real-time analytics, and stakeholder-facing insights.',
         bullets: [
-            'Designed user-based and content-based recommendation systems',
-            'Fine-tuned T5-based ranking models for content personalization',
-            'Built batch and streaming data pipelines using GCP Dataflow',
-            'Deployed ML models using Vertex AI and GKE',
-            'Implemented MLOps workflows with Kubeflow and CI/CD pipelines',
-            'Built analytics dashboards using Looker and Tableau'
+            'Designed content-based and user-based recommendation systems (Because You Watched, Last 5 Watched, Popular Content)',
+            'Developed and fine-tuned T5-based ranking models for content personalization',
+            'Built batch and streaming data pipelines using GCP Dataflow, Snowflake, BigQuery, and Cloud Storage',
+            'Deployed and monitored ML models on Vertex AI and GKE with MLOps workflows via Kubeflow and Vertex AI Pipelines',
+            'Architected real-time streaming pipelines (Couchbase → Kafka → Pub/Sub → Cloud Functions → Cloud Datastore)',
+            'Built an audit trail system for usage analytics and anomaly detection across storefronts',
+            'Created Looker and Tableau dashboards for engagement, churn prediction, and content performance analysis'
         ],
         tech: [
             'GCP',
             'Vertex AI',
             'Kubeflow',
             'Dataflow',
-            'Kubernetes',
+            'Kubernetes/GKE',
             'Snowflake',
+            'Kafka',
             'Python',
             'SQL',
             'Looker',
@@ -1982,7 +2115,7 @@ function TopIcons({ active, setActive }) {
               group
               flex items-center gap-2
               h-9
-              px-3
+              px-1.5
               rounded-xl
               transition-all duration-200
               ${isActive ? 'bg-green-200/70 text-green-800 shadow-sm' : 'text-slate-500 hover:bg-yellow-100/70 hover:text-slate-800'}
@@ -2049,8 +2182,7 @@ function Home() {
                 className: " sticky top-0 z-50 h-14 flex items-center justify-center px-3 sm:px-6 border-b border-green-200 bg-gradient-to-r from-green-100 via-lime-100 to-yellow-100 ",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$TopIcons$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                     active: activeTab,
-                    setActive: setActiveTab,
-                    className: "w-full max-w-md mx-auto"
+                    setActive: setActiveTab
                 }, void 0, false, {
                     fileName: "[project]/app/page.tsx",
                     lineNumber: 26,
