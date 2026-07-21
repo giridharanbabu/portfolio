@@ -27,8 +27,8 @@
     "Role-Based Access Control",
     "Data Visualization"
   ],
-  "github": "s",
-  "demo": "s",
+  "github": "https://github.com/giridharanbabu/my-coir",
+  "demo": "https://mycoir.netlify.app/",
   "image": "/logo.png"
 },
 {
@@ -60,8 +60,8 @@
     "Recommendation Systems",
     "Time Series Forecasting"
   ],
-  "github": "https://github.com/giridharanbabu/my-coir",
-  "demo": "https://mycoir.netlify.app/",
+  "github": "",
+  "demo": "",
   "image": "/ai.jpg"
 }
 
